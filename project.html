@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 100px;
+            font-family: Georgia, sans-serif;
+            background-color: #583535;
+        }
+
+        .login-container {
+            background: #9b6868;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            max-width: 70px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            font-style:'Georgia',serif;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: center;
+            font-style:'Georgia',serif;
+        }
+
+   
+        .form-group input {
+            width: 70%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-style:'Georgia',serif;
+        }
+       
+        button {
+            width: 30%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+       
+
+        .form-group select {
+            width: 78%;
+            padding:10px;
+            font-size: 1rem;
+            font-weight: 400;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            color:#776868;
+            
+         }
+         .form-group select option {
+        color: #333;
+         }
+         .form-group select option[disabled] {
+        color: #776868; /* Light color for default option */
+          }
+          .form-group select:valid {
+          color: #333; 
+         }
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+           
+            <img src="123.png" alt="Logo">
+        </div>
+        <h1>Login</h1>
+        <form>
+            <div class="form-group">
+       
+                <input type="text" id="name" name="name" placeholder=" Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="college-id" name="college-id" placeholder="College ID" required>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" id="mobile" name="mobile" placeholder=" Mobile number" required>
+            </div>
+            
+    
+            
+             
+            <div class="form-group">
+            
+           
+            <select name="Gender"  required>  
+                <option name=""disabled selected hidden>Select Gender</option>
+                <option name="gen">Male</option>
+                <option name ="gen">Female</option>
+                
+             </select>  
+            </div>
+          
+            <button type="submit">Login</button>  
+        </form>
+</body>
+</html>
+
